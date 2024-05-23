@@ -53,7 +53,4 @@ WITH customer_summary AS (
         customer_rental_summary crs
     JOIN 
         customer_payment_summary cps ON crs.customer_id = cps.customer_id;
-
-
--- Next, using the CTE, create the query to generate the final customer summary report, which should include: customer name, email, rental_count, total_paid and average_payment_per_rental, this last column is a derived column from total_paid and rental_count.
-
+        
